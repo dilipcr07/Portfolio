@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Security Gallery | Dilip Dhakal - Cyber Security Portfolio</title>
+    <!-- Google Fonts & Font Awesome -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container nav-container">
+            <a href="../index.html" class="logo"><i class="fas fa-shield-haltered"></i><span>Dilip.Dhakal</span></a>
+            <ul class="nav-links">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../about/index.html" class="nav-link">About</a></li>
+                <li><a href="../training/index.html" class="nav-link">Certifications</a></li>
+                <li><a href="../skills/index.html" class="nav-link">Skills</a></li>
+                <li><a href="../projects/index.html" class="nav-link">Projects</a></li>
+                <li><a href="../hobbies/index.html" class="nav-link">Hobbies</a></li>
+                <li><a href="../gallery/index.html" class="nav-link active">Gallery</a></li>
+                <li><a href="../contact/index.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobileMenu"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <main class="page-wrapper container">
+        <a href="../index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Main Portfolio</a>
+
+        <!-- GALLERY SECTION -->
+        <section id="gallery" class="section-wrapper" style="margin-bottom: 0;">
+            <h2 class="section-title" data-aos="fade-up"><i class="fas fa-images"></i> Security Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openGalleryModal(0)">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i><span>Nmap Scan</span></div>
+                    <div class="gallery-placeholder" style="background: linear-gradient(135deg,#0f2027,#203a43)"><i
+                            class="fas fa-terminal"></i></div>
+                </div>
+                <div class="gallery-item" onclick="openGalleryModal(1)">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i><span>Vulnerability Report</span>
+                    </div>
+                    <div class="gallery-placeholder" style="background: linear-gradient(135deg,#1e1e2f,#2a2a40)"><i
+                            class="fas fa-file-alt"></i></div>
+                </div>
+                <div class="gallery-item" onclick="openGalleryModal(2)">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i><span>Metasploit Console</span></div>
+                    <div class="gallery-placeholder" style="background: linear-gradient(135deg,#0b1f2e,#0e2a36)"><i
+                            class="fas fa-terminal"></i></div>
+                </div>
+                <div class="gallery-item" onclick="openGalleryModal(3)">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i><span>Falcon Console</span></div>
+                    <div class="gallery-placeholder" style="background: linear-gradient(135deg,#1f2937,#111827)"><i
+                            class="fas fa-shield-virus"></i></div>
+                </div>
+                <div class="gallery-item" onclick="openGalleryModal(4)">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i><span>Certificate</span></div>
+                    <div class="gallery-placeholder" style="background: linear-gradient(135deg,#1a1f2e,#222831)"><i
+                            class="fas fa-certificate"></i></div>
+                </div>
+                <div class="gallery-item" onclick="openGalleryModal(5)">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i><span>Burp Suite</span></div>
+                    <div class="gallery-placeholder" style="background: linear-gradient(135deg,#0e1c28,#0a1922)"><i
+                            class="fas fa-bug"></i></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="galleryModal" class="gallery-modal"><span class="close-modal" onclick="closeGalleryModal()">&times;</span>
+        <div class="modal-content">
+            <div id="modalImage"></div>
+            <div id="modalCaption"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p><i class="fas fa-shield-virus"></i> Dilip Dhakal — Cyber Security Portfolio | <span id="year"></span> |
+                "Secure the future, one byte at a time."</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
