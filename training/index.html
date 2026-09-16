@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="description" content="Dilip Dhakal's 49 Verified Certifications - CrowdStrike Partner Certifications, Specialist Learning Plans, Next-Gen SIEM, CQL, Endpoint Security, and Advanced Cybersecurity.">
+    <title>Training & Certifications | Dilip Dhakal - Cyber Security Portfolio</title>
+    <!-- Google Fonts & Font Awesome -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container nav-container">
+            <a href="../index.html" class="logo"><i class="fas fa-shield-haltered"></i><span>Dilip.Dhakal</span></a>
+            <ul class="nav-links">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../about/index.html" class="nav-link">About</a></li>
+                <li><a href="../training/index.html" class="nav-link active">Certifications</a></li>
+                <li><a href="../skills/index.html" class="nav-link">Skills</a></li>
+                <li><a href="../projects/index.html" class="nav-link">Projects</a></li>
+                <li><a href="../hobbies/index.html" class="nav-link">Hobbies</a></li>
+                <li><a href="../gallery/index.html" class="nav-link">Gallery</a></li>
+                <li><a href="../contact/index.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobileMenu"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <main class="page-wrapper container">
+        <a href="../index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Main Portfolio</a>
+
+        <!-- TRAINING SECTION -->
+        <section id="training" class="section-wrapper" style="margin-bottom: 0;">
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 1rem; margin-bottom: 1.5rem;">
+                <div>
+                    <h2 class="section-title" data-aos="fade-up" style="margin-bottom: 0.5rem;"><i class="fas fa-certificate"></i> Training & Certifications</h2>
+                    <p style="color: #b0c4de; font-size: 0.95rem; max-width: 720px;" data-aos="fade-up" data-aos-delay="100">
+                        Official, verified accreditations across <strong>CrowdStrike Falcon Platform</strong>, <strong>Next-Gen SIEM & CQL</strong>, <strong>Cloud Security</strong>, <strong>Identity Protection & Zero Trust</strong>, and <strong>Hands-on SOC Operations</strong>.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Stats Banner -->
+            <div class="cert-stats-banner" data-aos="fade-up" data-aos-delay="150">
+                <div class="cert-stat-card">
+                    <div class="cert-stat-icon cyan"><i class="fas fa-award"></i></div>
+                    <div class="cert-stat-info">
+                        <div class="stat-num" id="totalCertCount">49</div>
+                        <div class="stat-label">Total Credentials</div>
+                    </div>
+                </div>
+                <div class="cert-stat-card">
+                    <div class="cert-stat-icon gold"><i class="fas fa-shield-alt"></i></div>
+                    <div class="cert-stat-info">
+                        <div class="stat-num" id="partnerCertCount">10</div>
+                        <div class="stat-label">Partner Certifications</div>
+                    </div>
+                </div>
+                <div class="cert-stat-card">
+                    <div class="cert-stat-icon cyan"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="cert-stat-info">
+                        <div class="stat-num" id="learningPlanCount">8</div>
+                        <div class="stat-label">Specialist Learning Plans</div>
+                    </div>
+                </div>
+                <div class="cert-stat-card">
+                    <div class="cert-stat-icon purple"><i class="fas fa-microchip"></i></div>
+                    <div class="cert-stat-info">
+                        <div class="stat-num" id="specialistCourseCount">31</div>
+                        <div class="stat-label">Specialist Courses</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls: Search & Category Filters -->
+            <div class="cert-controls" data-aos="fade-up" data-aos-delay="200">
+                <div class="cert-search-wrapper">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="certSearch" class="cert-search-input" placeholder="Search 49 certifications by skill, ID, or title (e.g. SIEM, CQL, Zero Trust, Cloud, Falcon)...">
+                    <button type="button" id="certSearchClear" class="cert-search-clear" aria-label="Clear search"><i class="fas fa-times"></i></button>
+                </div>
+
+                <div class="cert-filters">
+                    <button type="button" class="cert-filter-btn active" data-filter="all">
+                        <i class="fas fa-th-large"></i> All Credentials <span class="filter-count">49</span>
+                    </button>
+                    <button type="button" class="cert-filter-btn" data-filter="partner">
+                        <i class="fas fa-shield-alt" style="color: #ffb86c;"></i> Partner Certifications <span class="filter-count">10</span>
+                    </button>
+                    <button type="button" class="cert-filter-btn" data-filter="learning-plan">
+                        <i class="fas fa-graduation-cap" style="color: #0ff0fc;"></i> Learning Plans <span class="filter-count">8</span>
+                    </button>
+                    <button type="button" class="cert-filter-btn" data-filter="siem">
+                        <i class="fas fa-chart-line" style="color: #bd93f9;"></i> Next-Gen SIEM & CQL <span class="filter-count">10</span>
+                    </button>
+                    <button type="button" class="cert-filter-btn" data-filter="endpoint">
+                        <i class="fas fa-desktop" style="color: #63b3ed;"></i> Endpoint & Platform <span class="filter-count">9</span>
+                    </button>
+                    <button type="button" class="cert-filter-btn" data-filter="forensics">
+                        <i class="fas fa-search-dollar" style="color: #50fa7b;"></i> SecOps & Forensics <span class="filter-count">7</span>
+                    </button>
+                    <button type="button" class="cert-filter-btn" data-filter="identity">
+                        <i class="fas fa-user-lock" style="color: #ff79c6;"></i> Identity & Zero Trust <span class="filter-count">5</span>
+                    </button>
+                </div>
+            </div>
+
+            <div id="certResultsMeta" class="cert-results-meta">Showing 49 of 49 certifications</div>
+
+            <!-- Dynamic Certifications Grid Container -->
+            <div id="certificationsGrid" class="training-grid">
+                <!-- Certifications will be rendered here dynamically by js/main.js using js/certifications-data.js -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p><i class="fas fa-shield-virus"></i> Dilip Dhakal — Cyber Security Portfolio | <span id="year"></span> |
+                "Secure the future, one byte at a time."</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/certifications-data.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
