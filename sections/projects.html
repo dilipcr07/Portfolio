@@ -1,30 +1,167 @@
 <!-- PROJECTS SECTION -->
 <section id="projects" class="container section-wrapper">
-    <h2 class="section-title" data-aos="fade-up"><i class="fas fa-project-diagram"></i> Security Projects</h2>
+    <div style="margin-bottom: 1.5rem;">
+        <h2 class="section-title" data-aos="fade-up" style="margin-bottom: 0.5rem;"><i class="fas fa-project-diagram"></i> Featured & Security Projects</h2>
+        <p style="color: #b0c4de; font-size: 0.95rem; max-width: 760px;" data-aos="fade-up" data-aos-delay="100">
+            Open-source security engineering implementations, CrowdStrike Falcon SIEM onboarding pipelines, and practical penetration testing labs.
+        </p>
+    </div>
     <div class="projects-grid">
-        <div class="card project-card">
-            <div class="project-icon"><i class="fas fa-search-plus"></i></div>
-            <h3>Network Vulnerability Scanner</h3>
-            <div class="project-tech"><span>Nmap</span><span>Nessus</span></div>
-            <p>Full-scale network scanning, open ports, CVEs, and mitigation report.</p>
+        <!-- 1. Windows DNS Log Collection to CrowdStrike NG-SIEM (FLAGSHIP GITHUB PROJECT) -->
+        <div class="card project-card featured-project" data-aos="fade-up">
+            <div>
+                <div class="project-top">
+                    <span class="project-badge featured"><i class="fab fa-github"></i> Featured GitHub Project</span>
+                    <span style="font-size: 0.75rem; color: #0ff0fc;"><i class="fas fa-star"></i> Production Lab</span>
+                </div>
+                <div class="project-icon"><i class="fas fa-network-wired"></i></div>
+                <h3>Windows DNS Log Collection to CrowdStrike NG-SIEM</h3>
+                <div class="project-tech">
+                    <span>CrowdStrike NG-SIEM</span>
+                    <span>LogScale Collector</span>
+                    <span>PowerShell</span>
+                    <span>Windows Server</span>
+                    <span>DNS Debug Logs</span>
+                </div>
+                <p class="project-desc">
+                    Engineered an automated SOC log onboarding pipeline: configured Windows Server DNS debug logging, deployed the CrowdStrike LogScale Collector with custom YAML configs, and ingested live DNS events into CrowdStrike Next-Gen SIEM for threat detection and CQL query analysis.
+                </p>
+            </div>
+            <div class="project-footer">
+                <a href="https://github.com/dilipcr07/windows-dns-log-collection-crowdstrike" target="_blank" rel="noopener noreferrer" class="btn-project primary-btn">
+                    <i class="fab fa-github"></i> View GitHub Repo <i class="fas fa-external-link-alt" style="font-size: 0.7rem;"></i>
+                </a>
+                <a href="https://github.com/dilipcr07/windows-dns-log-collection-crowdstrike/tree/main/docs" target="_blank" rel="noopener noreferrer" class="btn-project github">
+                    <i class="fas fa-book"></i> Architecture Docs
+                </a>
+            </div>
         </div>
-        <div class="card project-card">
-            <div class="project-icon"><i class="fas fa-mask"></i></div>
-            <h3>Metasploit Exploitation Lab</h3>
-            <div class="project-tech"><span>Metasploit</span><span>Meterpreter</span></div>
-            <p>Simulated real-world attacks, privilege escalation, defense documentation.</p>
+
+        <!-- 2. CrowdStrike Falcon EDR & SOAR Automation Lab -->
+        <div class="card project-card" data-aos="fade-up" data-aos-delay="100">
+            <div>
+                <div class="project-top">
+                    <span class="project-badge"><i class="fas fa-award"></i> CrowdStrike Certified Lab</span>
+                </div>
+                <div class="project-icon"><i class="fas fa-shield-virus"></i></div>
+                <h3>CrowdStrike Falcon Next-Gen SIEM & EDR Operations</h3>
+                <div class="project-tech">
+                    <span>CrowdStrike Falcon</span>
+                    <span>Next-Gen SIEM</span>
+                    <span>CQL Queries</span>
+                    <span>Fusion SOAR</span>
+                    <span>RTR Triage</span>
+                </div>
+                <p class="project-desc">
+                    Advanced SOC operations: sensor policy orchestration, behavioral IOA detection engineering, custom CQL correlation rules, and automated incident containment playbooks using Falcon Fusion SOAR.
+                </p>
+            </div>
+            <div class="project-footer">
+                <a href="training/index.html" class="btn-project github">
+                    <i class="fas fa-certificate"></i> View 48+ Certifications
+                </a>
+                <span style="font-size: 0.75rem; color: #94a3b8;"><i class="fas fa-shield-alt" style="color: #0ff0fc;"></i> Falcon Platform</span>
+            </div>
         </div>
-        <div class="card project-card">
-            <div class="project-icon"><i class="fas fa-shield-virus"></i></div>
-            <h3>CrowdStrike Falcon Next-Gen SIEM & EDR Operations</h3>
-            <div class="project-tech"><span>CrowdStrike Falcon</span><span>Next-Gen SIEM</span><span>CQL</span><span>Fusion SOAR</span></div>
-            <p>Detection engineering with CQL queries, correlation rules, Fusion SOAR automated playbooks, and sensor policy orchestration.</p>
+
+        <!-- 3. Smart Lesson Planning & Feedback System (GITHUB PROJECT) -->
+        <div class="card project-card" data-aos="fade-up" data-aos-delay="200">
+            <div>
+                <div class="project-top">
+                    <span class="project-badge"><i class="fab fa-github"></i> GitHub Project</span>
+                </div>
+                <div class="project-icon"><i class="fas fa-laptop-code"></i></div>
+                <h3>Smart Lesson Planning & Feedback System</h3>
+                <div class="project-tech">
+                    <span>PHP</span>
+                    <span>MySQL</span>
+                    <span>JavaScript</span>
+                    <span>Role-Based Access</span>
+                    <span>Secure Auth</span>
+                </div>
+                <p class="project-desc">
+                    Full-stack web application designed for educational institutions to automate lesson planning, track curriculum milestones, and provide structured multi-role feedback with role-based access controls and secure data persistence.
+                </p>
+            </div>
+            <div class="project-footer">
+                <a href="https://github.com/dilipcr07/LessonPlanned" target="_blank" rel="noopener noreferrer" class="btn-project primary-btn">
+                    <i class="fab fa-github"></i> View GitHub Repo <i class="fas fa-external-link-alt" style="font-size: 0.7rem;"></i>
+                </a>
+                <span style="font-size: 0.75rem; color: #94a3b8;"><i class="fas fa-code" style="color: #c084fc;"></i> Open Source</span>
+            </div>
         </div>
-        <div class="card project-card">
-            <div class="project-icon"><i class="fas fa-shield-haltered"></i></div>
-            <h3>Web App Pentesting</h3>
-            <div class="project-tech"><span>Burp Suite</span><span>OWASP</span></div>
-            <p>HTTP interception, input validation, OWASP Top 10 analysis.</p>
+
+        <!-- 4. Network Vulnerability Scanner & Hardening -->
+        <div class="card project-card" data-aos="fade-up">
+            <div>
+                <div class="project-top">
+                    <span class="project-badge"><i class="fas fa-terminal"></i> Security Lab</span>
+                </div>
+                <div class="project-icon"><i class="fas fa-search-plus"></i></div>
+                <h3>Network Vulnerability Assessment & Hardening</h3>
+                <div class="project-tech">
+                    <span>Nmap</span>
+                    <span>Nessus</span>
+                    <span>Wireshark</span>
+                    <span>CVE Auditing</span>
+                    <span>TCP/IP</span>
+                </div>
+                <p class="project-desc">
+                    Comprehensive network reconnaissance: host discovery, open port enumeration, Nessus vulnerability scoring, and Wireshark deep packet inspection to generate actionable mitigation and remediation roadmaps.
+                </p>
+            </div>
+            <div class="project-footer">
+                <span style="font-size: 0.78rem; color: #b0c4de;"><i class="fas fa-check-circle" style="color: #0ff0fc;"></i> Virtual Lab Validated</span>
+                <span style="font-size: 0.75rem; color: #94a3b8;">Broadway Infosys</span>
+            </div>
+        </div>
+
+        <!-- 5. Metasploit Exploitation Lab -->
+        <div class="card project-card" data-aos="fade-up" data-aos-delay="100">
+            <div>
+                <div class="project-top">
+                    <span class="project-badge"><i class="fas fa-user-secret"></i> Offensive Defense</span>
+                </div>
+                <div class="project-icon"><i class="fas fa-mask"></i></div>
+                <h3>Metasploit Attack Simulation & Defense</h3>
+                <div class="project-tech">
+                    <span>Metasploit</span>
+                    <span>Meterpreter</span>
+                    <span>Privilege Escalation</span>
+                    <span>Kali Linux</span>
+                </div>
+                <p class="project-desc">
+                    Simulated adversarial attacks across vulnerable targets: payload staging, post-exploitation enumeration, privilege escalation, and documenting endpoint detection signatures to enhance defensive posture.
+                </p>
+            </div>
+            <div class="project-footer">
+                <span style="font-size: 0.78rem; color: #b0c4de;"><i class="fas fa-check-circle" style="color: #0ff0fc;"></i> Controlled Sandbox</span>
+                <span style="font-size: 0.75rem; color: #94a3b8;">Offensive Security</span>
+            </div>
+        </div>
+
+        <!-- 6. Web Application Pentesting -->
+        <div class="card project-card" data-aos="fade-up" data-aos-delay="200">
+            <div>
+                <div class="project-top">
+                    <span class="project-badge"><i class="fas fa-bug"></i> AppSec Lab</span>
+                </div>
+                <div class="project-icon"><i class="fas fa-shield-haltered"></i></div>
+                <h3>Web Application Security & OWASP Pentesting</h3>
+                <div class="project-tech">
+                    <span>Burp Suite</span>
+                    <span>OWASP Top 10</span>
+                    <span>SQL Injection</span>
+                    <span>XSS Defense</span>
+                </div>
+                <p class="project-desc">
+                    Web application vulnerability auditing: intercepting HTTP requests via Burp Suite proxy, testing for SQLi, Cross-Site Scripting (XSS), Broken Access Control, and documenting input sanitization fixes.
+                </p>
+            </div>
+            <div class="project-footer">
+                <span style="font-size: 0.78rem; color: #b0c4de;"><i class="fas fa-check-circle" style="color: #0ff0fc;"></i> OWASP Audited</span>
+                <span style="font-size: 0.75rem; color: #94a3b8;">AppSec Standards</span>
+            </div>
         </div>
     </div>
 </section>
